@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=SynteX
+Comment=SynteX P2P Cryptocurrency
+Exec=syntex-qt %u
+Terminal=false
+Type=Application
+Icon=syntex128
+MimeType=x-scheme-handler/syntex;
+Categories=Office;Finance;
+Name[pl_PL]=syntex-qt.desktop.desktop

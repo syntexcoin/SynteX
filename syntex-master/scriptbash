@@ -1,0 +1,4 @@
+files="$(find -L "/home/marcin/syntex-master/src" -type f)"
+echo "$files" | while read file; do
+  cp -v ${file/syntex-master/syntex-mastertesting} $file
+done

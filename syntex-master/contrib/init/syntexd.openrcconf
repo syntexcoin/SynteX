@@ -1,0 +1,26 @@
+# /etc/conf.d/syntexd: config file for /etc/init.d/syntexd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/syntex/syntex.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/syntexd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/syntexd.pid"
+
+# Where to write syntexd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/syntexd"
+
+# User and group to own syntexd process
+#BITCOIND_USER="syntex"
+#BITCOIND_GROUP="syntex"
+
+# Path to syntexd executable
+#BITCOIND_BIN="/usr/bin/syntexd"
+
+# Nice value to run syntexd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

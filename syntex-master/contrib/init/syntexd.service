@@ -1,0 +1,26 @@
+[Unit]
+Description=SynteX's distributed currency daemon
+After=network.target
+
+[Service]
+User=syntex
+Group=syntex
+
+Type=forking
+PIDFile=/var/lib/syntexd/syntexd.pid
+
+ExecStart=/usr/bin/syntexd -daemon -pid=/var/lib/syntexd/syntexd.pid \
+          -conf=/etc/syntex/syntex.conf -datadir=/var/lib/syntexd
+
+ExecStop=-/usr/bin/syntex-cli -conf=/etc/syntex/syntex.conf \
+         -datadir=/var/lib/syntexd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
