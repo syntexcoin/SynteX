@@ -14,7 +14,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"io.savebitcoin.SynteX-Qt";
+        return @"io.syntexcoin.SynteX-Qt";
     } else {
         return [self __bundleIdentifier];
     }

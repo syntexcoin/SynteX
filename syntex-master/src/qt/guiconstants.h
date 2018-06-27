@@ -51,7 +51,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "SynteX"
-#define QAPP_ORG_DOMAIN "savebitcoin.io"
+#define QAPP_ORG_DOMAIN "syntexcoin.com"
 #define QAPP_APP_NAME_DEFAULT "SynteX-Qt"
 #define QAPP_APP_NAME_TESTNET "SynteX-Qt-testnet"
 

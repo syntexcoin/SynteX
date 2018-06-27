@@ -17,7 +17,7 @@
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The Pivx Core developers, 2017-@COPYRIGHT_YEAR@ The Bitcoin Green Core developers, 2017-@COPYRIGHT_YEAR@ The SynteX developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2009-@COPYRIGHT_YEAR@ The Bitcoin Core developers, 2014-@COPYRIGHT_YEAR@ The Dash Core developers, 2015-@COPYRIGHT_YEAR@ The Pivx Core developers, 2017-@COPYRIGHT_YEAR@ The Bitcoin Green Core developers, 2018-@COPYRIGHT_YEAR@ The SynteX developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -32,7 +32,7 @@
   <string>SynteX-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.savebitcoin.SynteX-Qt</string>
+  <string>io.syntexcoin.SynteX-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.savebitcoin.SynteXPayment</string>
+      <string>io.syntexcoin.SynteXPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>syntex</string>
@@ -52,7 +52,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.savebitcoin.paymentrequest</string>
+      <string>io.syntexcoin.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>SynteX payment request</string>
       <key>UTTypeConformsTo</key>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.savebitcoin.paymentrequest</string>
+        <string>io.syntexcoin.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>
