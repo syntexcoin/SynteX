@@ -1,1 +1,0 @@
-(seed,voting), ikony, checkpoints, copyrights, github, sprawdzenie

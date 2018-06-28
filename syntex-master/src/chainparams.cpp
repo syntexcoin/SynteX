@@ -93,11 +93,11 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x54;
-        pchMessageStart[1] = 0xdc;
-        pchMessageStart[2] = 0x12;
-        pchMessageStart[3] = 0xae;
-        vAlertPubKey = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
+        pchMessageStart[0] = 0x56;
+        pchMessageStart[1] = 0xde;
+        pchMessageStart[2] = 0x14;
+        pchMessageStart[3] = 0xb2;
+        vAlertPubKey = ParseHex("041116f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
         nDefaultPort = 9335;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 1050000;
@@ -121,17 +121,17 @@ public:
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 0 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04e5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("0425a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime = 1528832279;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 2337947;
+        genesis.nNonce = 3889971;
 	hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("00000972c750868fd3be511651cb954d68269eaf69cfcaf7f1c44d68cbc037de"));
-        assert(genesis.hashMerkleRoot == uint256("bd267dc012ac2a3f08da25666bbc9cbda6f0653f1ef9969459373fa4e161493d"));
+        assert(hashGenesisBlock == uint256("000008db4c3c8f12a55259e5b00343c75d014b8ea4dc0c7ac8a8283dd7f3e4fe"));
+        assert(genesis.hashMerkleRoot == uint256("06c1f59ed7d81b79be1cd2875e4991b3d1fba0576aebbddf1ccb8fc112ee7e0c"));
         // DNS Seeding
         vSeeds.push_back(CDNSSeedData("145.249.105.207", "145.249.105.207"));
 
@@ -179,11 +179,11 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x65;
-        pchMessageStart[1] = 0xd5;
-        pchMessageStart[2] = 0x04;
-        pchMessageStart[3] = 0x73;
-        vAlertPubKey = ParseHex("041b2b4c86273359acac3522471911ed2b303eaab65e8a1de01c06e89f2eab1e55234a4b504f3ce20c6f661f007d0ca15623b4358d9855c7c8ba793a24fa315e22");
+        pchMessageStart[0] = 0x67;
+        pchMessageStart[1] = 0xd7;
+        pchMessageStart[2] = 0x06;
+        pchMessageStart[3] = 0x75;
+        vAlertPubKey = ParseHex("041b2b4c86273359acac3522471911ed2b303eaab65e8a1de01c06e89f2eab1e55234a4b504f3ce20c6f661f007d0ca15623b4358d9855c7c8ba793a24fa315e33");
         nDefaultPort = 19335;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
@@ -202,7 +202,7 @@ public:
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("d7b93c06fa9a73b2b402ee87034aa6c6a6000570af380f449bb4ce048f570c10"));
+        assert(hashGenesisBlock == uint256("c943b4829c6247b03e6e8f5182c17e73cafe0c4777d79e2fc6174a7b48325fa3"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -266,7 +266,7 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 29335;
-        assert(hashGenesisBlock == uint256("4543927c1073d62e055a86a8638949cbb7fd73c87df77e27c34ef2e6acacabe1"));
+        assert(hashGenesisBlock == uint256("43aa88c95a6123adf0b18b4b906586183b56928b89c8035ed3b4e30ba2e7f821"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Regtest mode doesn't have any DNS seeds.
